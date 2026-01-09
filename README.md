@@ -7,6 +7,10 @@ BepHax kept crashing and breaking my instances so i just stole EFPP.
 
 - **ElytraFlyPlusPlus**: Advanced elytra flight module with bounce mode, obstacle passing, portal trap detection, and fake fly support.
 
+## Download
+
+Download the latest release from the [Releases page](https://github.com/jackmhny/EFPP-Addon/releases).
+
 ## Building
 
 ### Requirements
