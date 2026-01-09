@@ -1,6 +1,7 @@
 # EFPP-Addon
 
 A Meteor Client addon containing the ElytraFlyPlusPlus module from BepHax.
+BepHax kept crashing and breaking my instances so i just stole EFPP.
 
 ## Features
 
@@ -8,29 +9,28 @@ A Meteor Client addon containing the ElytraFlyPlusPlus module from BepHax.
 
 ## Building
 
-To build the addon, you need:
-- Java 21 JDK (not just JRE) - Install with: `sudo pacman -S jdk21-openjdk`
+### Requirements
+- Java 21 JDK (not just JRE)
 - The project uses Gradle with the wrapper included
 
-### Build Commands
+### Build Instructions
 
-**Using the build script (recommended):**
-```bash
-./build.sh
-```
+1. Ensure you have Java 21 JDK installed and JAVA_HOME set to your Java 21 installation
+2. Run the build command:
+   ```bash
+   ./gradlew build
+   ```
+3. The compiled jar will be in `build/libs/EFPP-Addon-1.0.jar`
 
-**Or manually with JAVA_HOME:**
-```bash
-export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
-./gradlew build
-```
+**Note:** If the build fails with Java version errors, make sure JAVA_HOME points to Java 21:
+- On Linux/Mac: `export JAVA_HOME=/path/to/your/java-21`
+- On Windows: Set JAVA_HOME environment variable in System Properties
 
-The compiled jar will be in `build/libs/EFPP-Addon-1.0.jar`
-
-**Note:** If you want to permanently set JAVA_HOME, add this to your `~/.bashrc` or `~/.zshrc`:
-```bash
-export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
-```
+Common Java 21 installation paths:
+- Arch Linux: `/usr/lib/jvm/java-21-openjdk`
+- Ubuntu/Debian: `/usr/lib/jvm/java-21-openjdk-amd64`
+- macOS (Homebrew): `/opt/homebrew/opt/openjdk@21`
+- Windows: `C:\Program Files\Java\jdk-21`
 
 ## Installation
 
