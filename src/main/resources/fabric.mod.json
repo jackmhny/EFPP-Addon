@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "efpp-addon",
+  "version": "${version}",
+  "name": "EFPP-Addon",
+  "description": "ElytraFlyPlusPlus addon for Meteor Client",
+  "authors": [
+    "dekrom"
+  ],
+  "contact": {
+    "repo": "https://github.com/your-username/EFPP-Addon"
+  },
+  "icon": "assets/efpp/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "efpp.addon.EFPPAddon"
+    ]
+  },
+  "mixins": [
+    "efpp.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "100,200,255"
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["${mc_version}"],
+    "meteor-client": "*"
+  }
+}

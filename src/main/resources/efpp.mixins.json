@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "package": "efpp.addon.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "EntityMixin",
+    "KeyBindingMixin",
+    "LivingEntityMixin",
+    "accessor.LivingEntityAccessor"
+  ],
+  "mixins": [
+    "PlayerEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,31 @@
+[versions]
+mod-version = "1.0"
+
+# Fabric (https://fabricmc.net/develop)
+minecraft = "1.21.10"
+yarn-mappings = "1.21.10+build.2"
+fabric-loader = "0.17.3"
+fabric-api = "0.138.3+1.21.10"
+
+# Loom (https://github.com/FabricMC/fabric-loom)
+loom = "1.13.4"
+
+# Meteor (https://github.com/MeteorDevelopment/meteor-client/)
+meteor = "1.21.10-SNAPSHOT"
+
+# Baritone
+baritone = "1.21.10-SNAPSHOT"
+
+[libraries]
+# Fabric base
+minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
+yarn = { module = "net.fabricmc:yarn", version.ref = "yarn-mappings" }
+fabric-loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric-loader" }
+fabric-api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric-api" }
+
+# Meteor client
+meteor-client = { module = "meteordevelopment:meteor-client", version.ref = "meteor" }
+baritone = { module = "meteordevelopment:baritone", version.ref = "baritone" }
+
+[plugins]
+fabric-loom = { id = "fabric-loom", version.ref = "loom" }
